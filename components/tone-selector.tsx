@@ -13,7 +13,7 @@ const TONES = Object.keys(TONE_META) as Tone[];
 
 export function ToneSelector({ value, onChange, disabled }: ToneSelectorProps) {
   return (
-    <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+    <div className="grid grid-cols-2 gap-2">
       {TONES.map((tone) => {
         const meta = TONE_META[tone];
         const active = value === tone;
